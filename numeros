@@ -1,0 +1,26 @@
+def main():
+    num1 = float(input("Ingrese su primer numero"))
+    num2 = float(input("Ingrese su segundo numero")) 
+    print ("1.sumar dos numeros")
+    print ("2.Restar dos numeros")
+    print ("3.multiplicar dos numeros")
+    print ("4.dividir dos numeros")
+    opcion = int(input("5.salir"))
+    
+    match opcion:
+        case 1:
+            resultado = (num1 + num2)
+            print ("el resultado de su suma es: ", resultado)
+        case 2:
+            resultado = (num1 - num2)
+            print ("el resultado de su resta es: ", resultado)
+        case 3:
+            resultado = (num1 * num2)
+            print ("el resultado de su multiplicacion es: ", resultado)
+        case 4:
+            resultado = (num1 / num2)
+            print ("el resultado de su division es: ", resultado)
+        case 5:
+            print("esta saliendo")
+if __name__ == "__main__":
+    main()
