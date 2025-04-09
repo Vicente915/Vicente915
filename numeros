@@ -1,11 +1,12 @@
 def main():
-    num1 = float(input("Ingrese su primer numero"))
-    num2 = float(input("Ingrese su segundo numero")) 
+     
     print ("1.sumar dos numeros")
     print ("2.Restar dos numeros")
     print ("3.multiplicar dos numeros")
     print ("4.dividir dos numeros")
     opcion = int(input("5.salir"))
+    num1 = float(input("Ingrese su primer numero"))
+    num2 = float(input("Ingrese su segundo numero"))
     
     match opcion:
         case 1:
@@ -18,6 +19,9 @@ def main():
             resultado = (num1 * num2)
             print ("el resultado de su multiplicacion es: ", resultado)
         case 4:
+            if num2 == 0:
+                while num2 == 0:
+                    num2 = float(input("Ingrese un numero que no sea 0"))
             resultado = (num1 / num2)
             print ("el resultado de su division es: ", resultado)
         case 5:
